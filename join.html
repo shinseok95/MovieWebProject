@@ -1,0 +1,230 @@
+<!--웹프로그래밍 프로젝트 3차 보고서(html,css,js,JQ)-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture Shock</title>
+
+<script src="Join_JS.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="Js.js"></script>
+  <link rel="stylesheet" href="CSS_intro.css">
+
+	<style>
+			h1 { text-align: center; font-size:50px; color:white; }
+			table {width : 600; height : 400; border: 0.1px solid silver; margin: auto; border-spacing:0;}
+			.center{text-align:center;}
+            .Fcolor{color:silver;}
+	</style>
+
+</head>
+<body>
+
+<div id="wapper">
+
+<!--타이틀-->
+
+<header>
+
+<br>
+<a href=home.html>
+  <img src="logo and title.png" alt=title>
+</a><br><br>
+
+</header>
+
+
+<!--메뉴-->
+
+<nav class="stickyBox">
+
+<ul>
+
+  <li>&nbsp;
+      <a href="introduce.html">
+    INTRODUCE
+    </a>
+  </li>
+
+  <li>&nbsp;&nbsp;&nbsp;
+      <a href="now_showing.html" >
+    NOW SHOWING
+    </a>
+  </li>
+
+  <li>&nbsp;&nbsp;&nbsp;
+      <a href="culture_shock.html">
+      CULTURE SHOCK
+      </a>
+    </li>
+
+</ul>
+
+</nav>
+
+<!--왼쪽 배너-->
+
+    <div id="banner">
+      <img class="banner">
+  </div>
+
+<!--오른쪽 리뷰 aside-->
+    
+<div id="rside">
+        <div id="main_aside">
+           <div class="tab_item">
+               <ul>
+                   <li class="item"><a href="culture_shock.html">
+                       <div class="thumbnail">
+                       </div>
+                       <div class="description">
+                           <strong>최신 영화 리뷰</strong>
+                       </div>
+                   </a></li>
+                   <li class="item"><a href="culture_shock.html">
+                       <div class="thumbnail">
+                           <img src="엔드게임.jpg" alt="엔드게임" width="45px" height="45px">
+                       </div>
+                       <div class="description">
+                           <strong>어벤져스 엔드게임</strong><p6>2019-04-24</p6>
+                       </div>
+                   </a></li>
+                   <li class="item"><a href="culture_shock2.html">
+                       <div class="thumbnail">
+                           <img src="그린북.jpg" alt="그린북" width="45px" height="45px">
+                       </div>
+                       <div class="description">
+                           <strong>그린북</strong><p6>2019-01-09</p6>
+                       </div>
+                   </a></li>
+                   <li class="item"><a href="culture_shock3.html">
+                       <div class="thumbnail">
+                           <img src="보헤미안랩소디.jpg" alt="보헤미안랩소디" width="45px" height="45px">
+                       </div>
+                       <div class="description">
+                           <strong>보헤미안 랩소디</strong><p6>2018-10-31</p6>
+                       </div>
+                   </a></li>
+                   <li class="item"><a href="culture_shock4.html">
+                       <div class="thumbnail">
+                           <img src="증인.jpg" alt="증인" width="45px" height="45px">
+                       </div>
+                       <div class="description">
+                           <strong>증인</strong><p6>2019-02-13</p6>
+                       </div>
+                   </a></li>
+               </ul>
+           </div>
+         </div>
+       </div>
+
+<br><br><br>
+
+<!-- 회원가입 table-->
+
+<h1><b>SIGN UP</b></h1>
+
+<form name="join" onsubmit="return validate();" action="login_home.html" method="post" enctype="text/plain">
+   <table>
+       <tr height="10" text-align="center">
+           <br><td colspan="2" style="text-align: center; color:white; font-size:20px;" ><b>회원기본정보</b></td><br><br>
+       </tr>
+       <tr>
+           <td class=Fcolor><b>아이디:</b></td>
+           <td class=Fcolor><input type="text" style="width:170px; "id="id" name="id" maxlength="12" /> ※4-12자의 영문 대소문자와 숫자로만 입력</td>
+       </tr>
+       <tr>
+           <td class=Fcolor><b>비번:</b></td>
+           <td class=Fcolor><input type="password"  style="width:170px;"id="pw" maxlength="12"/> ※4-12자의 영문 대소문자와 숫자로만 입력</td>
+       </tr>
+       <tr>
+           <td class=Fcolor><b>비번확인:</b></td>
+           <td class=Fcolor><input type="password" style="width:170px;" id="checkpw" maxlength="12"/></td>
+       </tr>
+       <tr>
+           <td class=Fcolor><b>메일주소:</b></td>
+           <td class=Fcolor><input type="text" style="width:170px;" id="email" /> ex)shinseok@naver.com</td>
+       </tr>
+       <tr>
+           <td class=Fcolor><b>이름:</b></td>
+           <td class=Fcolor><input type="text" style="width:170px;" name="name" maxlength="12" /></td>
+       </tr>
+       <tr  height="10" text-align="center">
+           <td colspan="2" style="text-align: center; font-size:20px; color:white;"><b>개인정보</b></td>
+       </tr>
+       <tr>
+           <td class=Fcolor><b>주민등록번호:</td>
+           <td class=Fcolor><input type="text" name="num1" id="num1" size="10" maxlength="6">-</input>
+           	<input type="password" name="num2" id="num2" size="10" maxlength="7"></input>
+           	예) 123456-1234567
+           </td>
+       </tr>
+   
+       <tr>
+           <td class=Fcolor><b>관심분야:</b></td>
+           <td class=Fcolor><input type="checkbox" name="inter" value="영화">영화</input>
+               <input type="checkbox" name="inter" value="비평">비평</input>
+               <input type="checkbox" name="inter" value="마블">마블</input>
+               <input type="checkbox" name="inter" value="영화감상">영화감상</input>
+               <input type="checkbox" name="inter" value="영화촬영">영화촬영</input>
+           </td>
+       </tr>
+       <tr>
+           <td class=Fcolor>
+               <b>자기소개:</b>
+           </td>
+           <td><textarea name="self" cols="40" rows="7"></textarea></td>
+       </tr>
+   </table>
+   <br>
+   <div class=center>
+       <input type="submit" value="회원가입" style="border-radius:5px; " />
+       <input type="reset" value="다시입력" style="border-radius:5px; "/>
+</div>
+</form>
+
+<br><br><br><br>
+
+<!--footer-->
+
+<footer >
+
+  <!--실시간 시간-->
+
+  <hr>
+  <span id="MyClock" style="color: white"></span>
+    
+  <!--인스타그램, 메일(사진)-->
+
+  <a style="text-align:left" href="https://www.instagram.com/shin__seok/?hl=ko">
+      <img src="instagram.png" alt="instagram" width="18px" height="18px">
+      </a>
+
+    <a href="mailto:pjjpjj2002@naver.com"> 
+        <img src="mail.png" alt="mail" width="18px" height="18px">
+    </a><br>
+
+</footer>
+
+ <!--JS-->
+ 
+ <script>
+ 
+        /*실시간 시간*/
+       
+        function MyClock(){
+         
+           var today=new Date();
+           var mymonth=today.getMonth()+1;
+           var day=today.getFullYear() + "년" + mymonth +"월"+ today.getDate() +"일";
+           var time= today.getHours() +"시" + today.getMinutes() +"분"+today.getSeconds()+"초";
+         
+           document.getElementById("MyClock").innerHTML=day+time;
+         
+           setTimeout('MyClock()',1000);
+         }
+         MyClock();
+</script>
+
+</body>
+</html>

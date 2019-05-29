@@ -1,0 +1,68 @@
+<!--웹프로그래밍 프로젝트 3차 보고서(html,css,js,JQ)-->
+
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <title>Notice pop-up</title>
+
+<style>
+
+
+/*폰트*/
+
+.font
+{
+    text-align: left;
+    color:white;
+    font-size: 100%;
+    font-family: "나눔고딕 Extrabold"
+}
+
+
+/*배경*/
+
+.back
+{
+    background-color:rgb(37, 35, 35);
+}
+</style>
+</HEAD>
+
+<BODY class="back" onload="addNum()">
+
+
+    <br><br><br>
+    <form class="font" name="formType">
+        <pre class="font"> 
+        Culture Shock에 오신 것을 환영합니다!
+        Culture Shock는 영화 비평 사이트이며, 
+        이 곳에 있는 모든 비평들은 개인 저작물임을 알려드립니다. 
+        이에 유의해주시길 바랍니다!
+    </pre>
+    <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+  <!--3초 후 창 닫힘-->
+
+        <input type="text" name="num" size=1>초 뒤에 창이 자동으로 닫힙니다.
+    </form>
+
+
+<script>
+ 
+ /*3초 후 창 닫힘*/
+ 
+        var sec=3;
+        function addNum(){
+            if(sec==0)
+            window.close()
+        
+        formType.num.value=sec;
+        sec=sec-1;
+        setTimeout("addNum()",1000)
+        }
+    </script>
+</BODY>
+</html>
+

@@ -1,0 +1,215 @@
+/*웹프로그래밍 프로젝트 3차 보고서(html,css,js,JQ)*/
+
+*{ margin:0; padding:0;}
+
+ul,li{list-style:none;}
+
+#wapper{ text-align:left; width:800px; margin:0 auto; }
+
+
+/*@글씨체 */
+
+p2
+{
+    text-align: left;
+    color:silver;
+    font-size: 90%;
+    font-family: "나눔고딕 Extrabold"
+}
+
+p3
+{
+    text-align: left;
+    color:silver;
+    font-size: 300%;
+    font-family: "나눔고딕 Extrabold"
+}
+p4
+{
+    text-align: left;
+    color:rgb(124, 100, 100);
+    font-size: 200%;
+    font-family: "나눔고딕 Extrabold"
+}
+p5
+{
+    color:rgb(194, 194, 194);
+    font-size: 150%;
+    font-family: "나눔고딕 Extrabold"
+}
+
+p6
+{
+    text-align: left;
+    color:silver;
+    font-size: 60%;
+    font-family: "나눔고딕"
+}
+
+
+
+
+/*@구역 관련*/
+
+/*위쪽 살짝의 여백*/
+header, footer, nav, aside, section
+{
+margin-top:1px;
+}
+
+/*전체 적당한 여백*/
+header, footer, nav, aside, section, article 
+{
+display:block; 
+}
+
+/*구역별 색 조정*/
+
+body{ text-align:center; background:#000;}
+
+header
+{
+   
+    text-align:center; 
+    background-color: black; 
+}
+
+nav
+{
+    background-color: rgb(60,60,59);
+}
+
+
+section 
+{
+    background-color: black;
+    color:white;
+    width:100%;
+    float:center;
+}
+
+footer 
+{
+    background-color: black;
+    text-align: right;
+    clear:both;
+}
+
+
+
+
+/*@구역 별 크기 조정*/
+
+header, nav, footer
+{
+width:100%;
+}
+
+/*@상단 메뉴*/
+
+ul{overflow:hidden}
+
+li{
+  list-style:none;
+  float:left;
+  padding:10px;
+  font-family: "Praetorian Regular";
+  font-size:25px;
+  color:white;
+  
+}
+
+.stickyBox{
+    position:sticky;
+    top:0px;
+}
+
+li:first-child{border-radius:0 0 0 0;}
+
+/*a 태그*/
+a
+{
+    text-decoration:none; 
+    color:white;
+}
+
+a:hover{color:red;}
+
+
+
+
+/*@introduce 사진 투명도*/
+
+section.opacity {opacity:0.6;}
+section:hover {opacity:1.0;}
+
+
+
+/*@오른쪽 aside*/
+
+#rside {
+    position: fixed;
+    top:300px; 
+    left:45%; 
+    margin-left:500px; 
+    width:200px; 
+}
+
+#content {
+
+    overflow: hidden;
+}
+
+#content > #main_section {
+    width: 800px;
+    float: left;
+}
+
+#main_section > article.main_article {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 0.1px solid silver;
+}
+
+#content > #main_aside {
+    width: 200px;
+    float: right;
+}
+
+.item {
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid rgb(233, 185, 185);
+}
+.thumbnail {
+    float: left;
+}
+.description {
+    float: left;
+    margin-left: 10px;
+}
+.description > strong {
+    display: block;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-align: left;
+    color:silver;
+    font-size: 60%;
+    font-family: "나눔고딕"
+}
+
+
+
+/*@왼쪽 배너*/
+
+#banner{
+    position: absolute;
+    top:130px; 
+    right:50%; 
+    margin-right:500px; 
+    width:100px; 
+    height:200px
+}
