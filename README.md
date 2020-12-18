@@ -7,5 +7,6 @@ HTML, CSS, JS를 통해 간단한 정적 웹 페이지를 제작하였습니다.
 <img src="https://user-images.githubusercontent.com/48644958/102573247-6219e800-4131-11eb-9cc4-582ff8a542ae.png" width="90%"></img>
 </div>
 
+HTML, CSS, JS를 통해 간단한 정적 웹 페이지를 제작하였습니다.
 
 https://shinseok95.github.io/MovieWebProject/home.html
