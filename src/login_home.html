@@ -1,0 +1,256 @@
+<!--웹프로그래밍 프로젝트 3차 보고서(html,css,js,JQ)-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Culture Shock</title>
+  <link rel="stylesheet" href="colorbox.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="jquery.colorbox.js"></script>
+  <script src="Js.js"></script>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+
+<!--저작권 새창 띄우기-->
+
+<body> 
+
+<div id="wapper">
+
+<!--타이틀-->
+
+<header>
+
+<br>
+<a href=>
+  <img src="logo and title.png" alt=title>
+</a><br><br>
+
+</header>
+
+
+<!--메뉴-->
+
+<nav class="stickyBox">
+
+<ul>
+
+  <li>&nbsp;
+      <a href="introduce.html">
+    INTRODUCE
+    </a>
+  </li>
+
+  <li>&nbsp;&nbsp;&nbsp;
+      <a href="now_showing.html" >
+    NOW SHOWING
+    </a>
+  </li>
+
+  <li>&nbsp;&nbsp;&nbsp;
+      <a href="culture_shock.html">
+      CULTURE SHOCK
+      </a>
+    </li>
+
+</ul>
+
+</nav>
+
+
+<!--왼쪽 배너-->
+
+<aside>
+
+  <div id="banner">
+    <img class="banner">
+</div>
+
+
+<!--로그인-->
+
+<div>
+
+<br>&nbsp;&nbsp;&nbsp;
+<p2 style="color:red"><b>"Culture Shock"<b></p2> <p2><b>회원님</b></p2><br>
+&nbsp;&nbsp;&nbsp;
+<p2><b>반갑습니다</b></p2><br>
+  
+ </form><br><hr>
+
+</div>
+
+<!-- 비평 검색-->
+
+<div style="text-align: center">
+
+<form name="join">
+  <p1>
+      <br><b>비평 검색</b><br>
+  </p1><br>
+    <input type="text" style="width:120px;" id="serch" />
+    <input type="button" value="검색" onclick="Serch()" style="border-radius:5px;" /><br><br><hr>
+</form>
+</div>
+
+<!--영화 미리보기(엔드게임 동영상)-->
+
+<div style="text-align: center">
+
+<p1>
+    <br><b>Avengers<br>Endgame</b>
+  </p1><br><br>
+
+  <iframe width="230" height="200" src="https://www.youtube.com/embed/ybhXVSAdIRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe> <br></a>
+
+  <p2>
+    <br>어벤져스의 마지막 서사가 시작된다<br>
+  </p2><br><br><hr>
+
+</div>
+
+<!--영화 미리보기(호텔뭄바이) 동영상)-->
+
+<div style="text-align: center">
+
+  <p1>
+      <br><b>Hotel Mumbai</b><br>
+    </p1><br><br>
+
+ <iframe width="230" height="200" src="https://www.youtube.com/embed/pkoFwyESk44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+ allowfullscreen></iframe> <br></a>
+
+  <p2>
+    <br>호텔에서 일어나는 살인사건
+  </p2><br><br><br>
+  
+</div>
+
+</aside>
+
+<!--오른쪽 리뷰 aside-->
+
+<div id="rside">
+    <div id="main_aside">
+       <div class="tab_item">
+           <ul>
+               <li class="item"><a href="culture_shock.html">
+                   <div class="thumbnail">
+                   </div>
+                   <div class="description">
+                       <strong>최신 영화 리뷰</strong>
+                   </div>
+               </a></li>
+               <li class="item"><a href="culture_shock.html">
+                   <div class="thumbnail">
+                       <img src="엔드게임.jpg" alt="엔드게임" width="45px" height="45px">
+                   </div>
+                   <div class="description">
+                       <strong>어벤져스 엔드게임</strong><p5>2019-04-24</p5>
+                   </div>
+               </a></li>
+               <li class="item"><a href="culture_shock2.html">
+                   <div class="thumbnail">
+                       <img src="그린북.jpg" alt="그린북" width="45px" height="45px">
+                   </div>
+                   <div class="description">
+                       <strong>그린북</strong><p5>2019-01-09</p5>
+                   </div>
+               </a></li>
+               <li class="item"><a href="culture_shock3.html">
+                   <div class="thumbnail">
+                       <img src="보헤미안랩소디.jpg" alt="보헤미안랩소디" width="45px" height="45px">
+                   </div>
+                   <div class="description">
+                       <strong>보헤미안 랩소디</strong><p5>2018-10-31</p5>
+                   </div>
+               </a></li>
+               <li class="item"><a href="culture_shock4.html">
+                   <div class="thumbnail">
+                       <img src="증인.jpg" alt="증인" width="45px" height="45px">
+                   </div>
+                   <div class="description">
+                       <strong>증인</strong><p5>2019-02-13</p5>
+                   </div>
+               </a></li>
+           </ul>
+       </div>
+     </div>
+   </div>
+
+
+<!--본문-->
+
+<!--메인 사진(더보이)-->
+
+  <section style="text-align:center">
+
+    <div style="margin-top: 10px">
+      <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=181701">
+          <img src="더보이.jpg" alt="더보이" width="530px" height="800px">
+      </a>
+    </div>
+
+<!--본문 글-->
+
+<article>
+  
+<pre>
+
+<b>
+    어느 날, 간절히 아기를 원하던 부부에게 찾아온 
+    다른 세계의 소년 ‘브랜든’ 
+    부모의 보살핌 속에 평범하게 자라던 중 
+    자신에게 숨겨진 강력한 힘을 깨닫게 되면서 
+    인류를 위협할 사악한 본성을 드러내기 시작하는데… 
+      
+    그는 과연 축복인가, 재앙인가?
+</b>
+
+</article>
+
+</section>
+
+<!--footer-->
+
+<footer >
+
+  <!--실시간 시간-->
+
+  <hr>
+  <span id="MyClock" style="color: white"></span>
+
+  <!--인스타그램, 메일(사진)-->
+
+  <a style="text-align:left" href="https://www.instagram.com/shin__seok/?hl=ko">
+      <img src="instagram.png" alt="instagram" width="18px" height="18px">
+      </a>
+
+    <a href="mailto:pjjpjj2002@naver.com"> 
+        <img src="mail.png" alt="mail" width="18px" height="18px">
+    </a><br>
+
+</footer>
+
+<script>
+
+/*실시간 시간*/
+             
+function MyClock(){
+               
+               var today=new Date();
+               var mymonth=today.getMonth()+1;
+               var day=today.getFullYear() + "년" + mymonth +"월"+ today.getDate() +"일";
+               var time= today.getHours() +"시" + today.getMinutes() +"분"+today.getSeconds()+"초";
+                          
+               document.getElementById("MyClock").innerHTML=day+time;
+                          
+               setTimeout('MyClock()',1000);
+           }
+           MyClock();
+
+</script>
+
+ </body>
+</html>
