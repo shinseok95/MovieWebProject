@@ -7,6 +7,11 @@
 
 https://shinseok95.github.io/MovieWebProject/home.html
 
+## 개발 환경
+
+> 운영체제 : Windows10
+> 개발언어 : HTML, CSS, JavaScript
+
 ## 페이지 스크린샷
 
 <div>
